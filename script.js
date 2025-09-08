@@ -29,4 +29,15 @@ form.addEventListener("submit", function (e) {
     cell1.innerText = name;
     cell2.innerText = id;
     cell3.innerText = email;
-    cell4.innerText = contact;    
+    cell4.innerText = contact;
+    
+// Edit button
+    let editBtn = document.createElement("button");
+    editBtn.innerText = "Edit";
+    editBtn.onclick = function () {
+        document.getElementById("studentName").value = cell1.innerText;
+        document.getElementById("studentID").value = cell2.innerText;
+        document.getElementById("email").value = cell3.innerText;
+        document.getElementById("contact").value = cell4.innerText;
+        row.remove(); 
+    };
