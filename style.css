@@ -104,3 +104,13 @@ button:hover {
         margin-top: 10px;
     }
 }
+/* responsive for tablet */
+@media (min-width: 641px) and (max-width: 1024px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    table th, table td {
+        font-size: 1rem;
+    }
+}
