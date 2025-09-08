@@ -9,7 +9,53 @@
 <!-- Header Section -->
     <header>
         <h1>Student Registration System</h1>
-        <p>Register student details, view records, and manage them easily.</p>
-</header>
+        <p>Register student details, view records, and manage them easily.</p></header>
+
+        <!-- main section  -->
+        <section id="registration-form">
+        <h2>Register Student</h2>
+        <form id="studentForm">
+            <div class="form-group">
+                <label for="studentName">Student Name:</label>
+                <input type="text" id="studentName" name="studentName" placeholder="Enter student name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="studentID">Student ID:</label>
+                <input type="number" id="studentID" name="studentID" placeholder="Enter student ID" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email ID:</label>
+                <input type="email" id="email" name="email" placeholder="Enter email address" required>
+            </div>
+
+            <div class="form-group">
+                <label for="contact">Contact Number:</label>
+                <input type="tel" id="contact" name="contact" placeholder="Enter contact number" required>
+            </div>
+
+            <button type="submit">Register</button>
+        </form>
+    </section>
+
+<!-- display section -->
+    <section id="display-section">
+        <h2>Registered Students</h2>
+        <table id="studentTable">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Student ID</th>
+                    <th>Email</th>
+                    <th>Contact</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Records will appear here dynamically -->
+            </tbody>
+        </table>
+    </section>
 </body>
 </html>
