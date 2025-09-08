@@ -11,3 +11,22 @@ form.addEventListener("submit", function (e) {
     let email = document.getElementById("email").value;
     let contact = document.getElementById("contact").value;
 
+ //  validation on empty fields
+    if (name === "" || id === "" || email === "" || contact === "") {
+        alert("All fields are required!");
+        return;
+    }
+
+// Add new row to table
+    let row = tableBody.insertRow();
+
+    let cell1 = row.insertCell(0);
+    let cell2 = row.insertCell(1);
+    let cell3 = row.insertCell(2);
+    let cell4 = row.insertCell(3);
+    let cell5 = row.insertCell(4);
+
+    cell1.innerText = name;
+    cell2.innerText = id;
+    cell3.innerText = email;
+    cell4.innerText = contact;    
