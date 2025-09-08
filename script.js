@@ -41,3 +41,24 @@ form.addEventListener("submit", function (e) {
         document.getElementById("contact").value = cell4.innerText;
         row.remove(); 
     };
+
+     // Delete button
+    let delBtn = document.createElement("button");
+    delBtn.innerText = "Delete";
+    delBtn.onclick = function () {
+        row.remove();
+    };
+
+    // Add buttons to last cell
+    cell5.appendChild(editBtn);
+    cell5.appendChild(delBtn);
+
+    // Reset form
+    form.reset();
+
+    // Add scrollbar if more than 5 rows
+    if (tableBody.rows.length > 5) {
+        tableBody.parentElement.style.maxHeight = "200px";
+        tableBody.parentElement.style.overflowY = "auto";
+    }
+});
