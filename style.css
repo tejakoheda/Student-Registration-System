@@ -5,10 +5,29 @@
     box-sizing: border-box;
     font-family: Arial, sans-serif;
 }
+
+
 /* Body styling */
 body {
     background-color: #f4f6f9;
     color: #333;
     line-height: 1.6;
     padding: 20px;
+}
+
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2rem;
+    color: #004085;
+}
+
+header p {
+    font-size: 1rem;
+    color: #555;
 }
