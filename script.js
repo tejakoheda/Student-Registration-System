@@ -56,9 +56,5 @@ form.addEventListener("submit", function (e) {
     // Reset form
     form.reset();
 
-    // Add scrollbar if more than 5 rows
-    if (tableBody.rows.length > 5) {
-        tableBody.parentElement.style.maxHeight = "200px";
-        tableBody.parentElement.style.overflowY = "auto";
-    }
+
 });
